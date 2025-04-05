@@ -1,0 +1,64 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c61381ce-59b5-4d56-8da4-03e56ea51815</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>mainPackage\main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>MonteCarlo_Assignment10</Name>
+    <RootNamespace>MonteCarlo_Assignment10</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BeckerD\BeckerD.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BeckerD\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarforNc\CarforNc.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarforNc\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mainPackage\main.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mainPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SlivinMb\SlivinMb.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SlivinMb\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BeckerD\" />
+    <Folder Include="CarforNc\" />
+    <Folder Include="mainPackage\" />
+    <Folder Include="SlivinMb\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
