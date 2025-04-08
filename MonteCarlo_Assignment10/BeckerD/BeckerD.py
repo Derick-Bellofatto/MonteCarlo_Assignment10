@@ -1,5 +1,5 @@
 # File Name : BeckerD.py
-# Student Name: David
+# Student Name: David Becker
 # email:  Beckerd8@mail.uc.edu
 # Assignment Number: Assignment 10
 # Due Date:   4/10/2025
@@ -10,3 +10,22 @@
 # Brief Description of what this module does: 
 
 # Anything else that's relevant:
+
+class EventProcessor:
+    def __init__(self, events):
+        self.events = events
+
+    def display_scores(self):
+        for event in self.events:
+            competitions = event.get('competitions', [])
+            date = event.get('date', 'Unknown Date')
+            print("-------------------------------------------------\n")
+            print(f"Game: {event.get('shortName', 'Unknown Game')}")
+            print(f"Date: {date}\n")
+
+            for competition in competitions:
+                competitors = competition.get('competitors', [])
+                for competitor in competitors:
+                    team_name = competitor['team'].get('displayName', 'Unknown Team')
+                    score = competitor.get('score', '0')
+                    print(f"{team_name}: {score}\n")

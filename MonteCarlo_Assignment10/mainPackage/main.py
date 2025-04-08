@@ -23,3 +23,7 @@ if __name__ == "__main__":
     response = requests.get('https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard') #reaches out to MLB's API endpoint and returns current MLB data as "response"
     json_string = response.content #Saves the content to a single string
     parsed_json = json.loads(json_string) # Python dictionary parsed from string
+   
+    events = parsed_json.get('events', [])
+    EventProcessor(events).display_scores()
+    
