@@ -1,6 +1,6 @@
-# File Name : BeckerD.py
-# Student Name: David Becker
-# email:  Beckerd8@mail.uc.edu
+# File Name : mlbInformation.py
+# Student Name: Derick, David, Michael, and Nikki
+# email:  Bellofdk@mail.uc.edu  Beckerd8@mail.uc.edu    Slivinmb@mail.uc.edu    Carfornc@mail.uc.edu
 # Assignment Number: Assignment 10
 # Due Date:   4/10/2025
 # Course #/Section:   IS4010-001
@@ -23,9 +23,14 @@ class EventProcessor:
             print(f"Game: {event.get('shortName', 'Unknown Game')}")
             print(f"Date: {date}\n")
 
+
             for competition in competitions:
                 competitors = competition.get('competitors', [])
+                if 'attendance' in competition:
+                        print("Attendance :", competition['attendance'])
+
                 for competitor in competitors:
                     team_name = competitor['team'].get('displayName', 'Unknown Team')
                     score = competitor.get('score', '0')
                     print(f"{team_name}: {score}\n")
+                    

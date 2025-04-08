@@ -21,16 +21,10 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BeckerD\BeckerD.py">
+    <Compile Include="mlbInformation\mlbInformation.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BeckerD\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="CarforNc\CarforNc.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="CarforNc\__init__.py">
+    <Compile Include="mlbInformation\__init__.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="mainPackage\main.py">
@@ -39,18 +33,17 @@
     <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SlivinMb\SlivinMb.py">
+    <Compile Include="csv\csv.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="SlivinMb\__init__.py">
+    <Compile Include="csv\__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BeckerD\" />
-    <Folder Include="CarforNc\" />
+    <Folder Include="mlbInformation\" />
     <Folder Include="mainPackage\" />
-    <Folder Include="SlivinMb\" />
+    <Folder Include="csv\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
