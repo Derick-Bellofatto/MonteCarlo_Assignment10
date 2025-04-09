@@ -1,6 +1,6 @@
-# File Name : SlivinMb.py
-# Student Name: Michael
-# email:  Slivinmb@mail.uc.edu
+# File Name : csv.py
+# Student Name: Derick, David, Michael, and Nikki
+# email:  Bellofdk@mail.uc.edu  Beckerd8@mail.uc.edu    Slivinmb@mail.uc.edu    Carfornc@mail.uc.edu
 # Assignment Number: Assignment 10
 # Due Date:   4/10/2025
 # Course #/Section:   IS4010-001
