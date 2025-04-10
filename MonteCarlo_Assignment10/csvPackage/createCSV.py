@@ -26,23 +26,23 @@ class CsvProcessor:
 
     def writecsv(self):
         '''
-        Retreives data from API and submits it into a csv file with Game, Date, Attendance, Team, and Score colummns. CSV file is then saved in project folder.
+        Retrieves data from API and submits it into a csv file with Game, Date, Attendance, Team, and Score colummns. CSV file is then saved in project folder.
         '''
         ourdata =[]
         csvheader =['Game','Date','Attendance','Team','Score']
         for event in self.json_data:
-            short_name = event.get('shortName', 'Unkown Game')
+            short_name = event.get('shortName', 'Unknown Game')
             date = event.get('date', 'Unknown Date')
 
             competitions = event.get('competitions', [])
             for competition in competitions:
                 competitors = competition.get('competitors', [])
                 attendance = competition.get('attendance','0')
-            for competitor in competitors:
-                team_name = competitor['team'].get('displayName', 'Unknown Team')
-                score = competitor.get('score', '0')
-                listing =[short_name, date, attendance,team_name, score]
-                ourdata.append(listing)
+                for competitor in competitors:
+                    team_name = competitor['team'].get('displayName', 'Unknown Team')
+                    score = competitor.get('score', '0')
+                    listing =[short_name, date, attendance,team_name, score]
+                    ourdata.append(listing)
             
 
 
