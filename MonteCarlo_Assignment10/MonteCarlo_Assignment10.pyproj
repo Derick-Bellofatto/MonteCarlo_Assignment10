@@ -33,17 +33,17 @@
     <Compile Include="mainPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="csv\csv.py">
+    <Compile Include="csvPackage\createCSV.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="csv\__init__.py">
+    <Compile Include="csvPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="mlbInformation\" />
     <Folder Include="mainPackage\" />
-    <Folder Include="csv\" />
+    <Folder Include="csvPackage\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

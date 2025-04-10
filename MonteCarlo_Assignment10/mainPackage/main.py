@@ -9,11 +9,12 @@
 
 # Brief Description of what this module does: This module retrieves MLB JSON data and parses it into a python dictionary as well as calls/executes groupmembers modules
 # Citations: Inclass Python API Example, Postman, MLB API
+#            https://www.youtube.com/watch?v=bHCHKeJ6bI8
 
 # Anything else that's relevant:
 
 from mlbInformation.mlbInformation import *
-from csv.csv import *
+from csvPackage.createCSV import *
 import requests
 import json
 
@@ -26,4 +27,7 @@ if __name__ == "__main__":
     events = parsed_json.get('events', [])
     EventProcessor(events).display_scores()
    # AttendanceDisplay(events).display_attendance()
-    
+
+    CsvProcessor(events).writecsv()
+
+
