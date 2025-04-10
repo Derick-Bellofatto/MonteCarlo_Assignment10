@@ -33,4 +33,6 @@ class EventProcessor:
                     team_name = competitor['team'].get('displayName', 'Unknown Team')
                     score = competitor.get('score', '0')
                     print(f"{team_name}: {score}\n")
+
+
                     
