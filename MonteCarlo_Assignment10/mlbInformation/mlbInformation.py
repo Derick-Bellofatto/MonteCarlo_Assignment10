@@ -12,6 +12,9 @@
 # Anything else that's relevant:
 
 class EventProcessor:
+    '''
+    Processes event data and displays team scores and attendance.
+    '''
     def __init__(self, events):
         self.events = events
 
